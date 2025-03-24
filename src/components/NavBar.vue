@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import navbarBgImage from '@/assets/images/navbar1.jpeg'
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import { RouterLink } from 'vue-router'
     <!-- 上部分：背景图片区域 -->
     <div
       class="position-relative bgimg-center-cover"
-      style="background: url('/src/assets/images/navbar1.jpeg')"
+      :style="{ background: `url(${navbarBgImage})` }"
     >
       <!-- 添加白色遮罩层 -->
       <div class="position-absolute w-100 h-100 bg-white bg-opacity-25"></div>
