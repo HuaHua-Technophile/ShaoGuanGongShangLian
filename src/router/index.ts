@@ -51,7 +51,7 @@ const router = createRouter({
 })
 
 // 设置页面标题
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const title = to.meta.title ? `${to.meta.title} - 韶关市工商联` : '韶关市工商联'
   document.title = title as string
   next()

@@ -33,7 +33,7 @@
           <div class="mb-1">版权所有：韶关市工商联</div>
           <div class="mb-1">地址：韶关市XXXXXXX</div>
           <div class="mb-1">备案号码：粤ICP备88888888号-1</div>
-          <div>网站建设：版星信息技术有限公司</div>
+          <div>网站建设：辰星信息技术有限公司</div>
         </div>
 
         <!-- 右侧二维码 -->
