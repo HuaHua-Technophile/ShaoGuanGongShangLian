@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header class="w-100 position-relative">
+  <header class="w-100 position-relative" style="box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5)">
     <!-- 上部分：背景图片区域 -->
     <div
       class="position-relative bgimg-center-cover"
