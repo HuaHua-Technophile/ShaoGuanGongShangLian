@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+// 移除了 import footerBg 导入语句
+</script>
 
 <template>
   <footer
@@ -6,15 +8,7 @@
     style="box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5)"
   >
     <!-- 添加城市剪影背景 -->
-    <div
-      class="position-absolute top-0 w-100 h-100"
-      style="
-        opacity: 0.2;
-        background: url('/src/assets/images/footer-city.svg');
-        background-position: center 40%;
-        background-size: 30% auto;
-      "
-    ></div>
+    <div class="position-absolute top-0 w-100 h-100 footer-bg"></div>
 
     <div class="container position-relative" style="z-index: 2">
       <div class="row align-items-center">
@@ -51,4 +45,11 @@
   </footer>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.footer-bg {
+  background: url('@/assets/images/footer-city.svg');
+  opacity: 0.2;
+  background-position: center 40%;
+  background-size: 30% auto;
+}
+</style>

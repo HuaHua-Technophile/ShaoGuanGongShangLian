@@ -1,5 +1,11 @@
 // 导入Bootstrap
 @use 'bootstrap/scss/bootstrap';
+// 导入Bootstrap Icons
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 /**
   * @description 鼠标指针样式类
@@ -14,4 +20,74 @@
 .bgimg-center-cover {
   background-position: center !important;
   background-size: cover !important;
+}
+
+/**
+  * @description 过渡效果类
+  */
+// 定义过渡时间变量 - 使用数组
+$transition-times: (250, 500, 750, 1000, 1250, 1500);
+
+// 生成过渡效果类
+@each $time in $transition-times {
+  .transition-#{$time} {
+    transition: all #{$time}ms;
+  }
+}
+
+/**
+  * @description z-index层级类
+  */
+// 生成z-index层级类
+@for $level from 1 through 5 {
+  .z-index-#{$level} {
+    z-index: $level !important;
+  }
+}
+
+/**
+  * @description 响应式字体大小类扩展
+  */
+// 定义响应式字体大小变量
+$fs-sizes: (
+  1: 2.5rem,
+  // 相当于h1
+  2: 2rem,
+  // 相当于h2
+  3: 1.75rem,
+  // 相当于h3
+  4: 1.5rem,
+  // 相当于h4
+  5: 1.25rem,
+  // 相当于h5
+  6: 1rem,
+  // 相当于h6
+  7: 0.875rem,
+  // 小号字体(14px)
+  8: 0.75rem,
+  // 更小字体(12px)
+  9: 0.625rem,
+  // 极小字体(10px)
+  10: 0.5rem, // 微小字体(8px)
+);
+
+// 默认断点 - 创建基础的字体大小类
+@each $key, $value in $fs-sizes {
+  .fs-#{$key} {
+    font-size: $value !important;
+  }
+}
+
+// 定义断点列表
+$breakpoints: (sm, md, lg, xl, xxl);
+
+// 使用嵌套循环为所有断点生成字体大小类
+@each $breakpoint in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @each $key, $value in $fs-sizes {
+      .fs-#{$breakpoint}-#{$key} {
+        font-size: $value !important;
+      }
+    }
+  }
 }
