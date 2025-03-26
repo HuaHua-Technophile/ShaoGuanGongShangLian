@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue'
-import NavBar from '@/components/NavBar.vue'
-import Footer from '@/components/Footer.vue'
 import router from '@/router'
 
 // 定义过渡名称的响应式变量

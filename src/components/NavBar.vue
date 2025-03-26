@@ -113,8 +113,24 @@ const toggleMenu = () => {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* 覆盖移动端的背景色规则 */
 .nav-menu-mobile .nav-link:hover,
 .nav-menu-mobile .router-link-active {
+  background-color: transparent;
+}
+
+.nav-menu-mobile .nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-menu-mobile .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     to right,
     transparent,
@@ -122,6 +138,14 @@ const toggleMenu = () => {
     rgba(var(--bs-primary-rgb), 0.7) 80%,
     transparent
   );
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: -1;
+}
+
+.nav-menu-mobile .nav-link:hover::before,
+.nav-menu-mobile .router-link-active::before {
+  opacity: 1;
 }
 
 .rotate-180 {
