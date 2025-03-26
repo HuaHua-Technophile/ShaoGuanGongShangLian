@@ -77,27 +77,27 @@ const toggleMenu = () => {
           <div class="row g-0" :class="{ 'flex-column': deviceStore.isMobile }">
             <RouterLink
               to="/intro"
-              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
               >工商联简介</RouterLink
             >
             <RouterLink
               to="/constitution"
-              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
               >工商联章程</RouterLink
             >
             <RouterLink
               to="/leadership"
-              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
               >工商联领导</RouterLink
             >
             <RouterLink
               to="/departments"
-              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
               >部门机构</RouterLink
             >
             <RouterLink
               to="/members"
-              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
               >会员列表</RouterLink
             >
           </div>
