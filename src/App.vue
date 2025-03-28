@@ -2,12 +2,10 @@
 import { RouterView } from 'vue-router'
 import { ref, onMounted, onUnmounted } from 'vue'
 import router from '@/router'
+import { routeOrder } from '@/router'
 
 // 定义过渡名称的响应式变量
 const transitionName = ref('fade')
-
-// 路由顺序定义
-const routeOrder = ['intro', 'constitution', 'leadership', 'departments', 'members']
 
 // 确定过渡方向的函数
 const determineTransition = (toName: string, fromName: string): string => {
