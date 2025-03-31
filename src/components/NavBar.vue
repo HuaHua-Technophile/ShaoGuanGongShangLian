@@ -88,17 +88,27 @@ const toggleMenu = () => {
             <RouterLink
               to="/leadership"
               class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
-              >工商联领导</RouterLink
+              >领导</RouterLink
             >
             <RouterLink
-              to="/departments"
+              to="/office"
               class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
-              >部门机构</RouterLink
+              >办公室</RouterLink
             >
             <RouterLink
-              to="/members"
+              to="/member"
               class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
-              >会员列表</RouterLink
+              >会员部</RouterLink
+            >
+            <RouterLink
+              to="/economic"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
+              >经济联络部</RouterLink
+            >
+            <RouterLink
+              to="/service"
+              class="col-md text-white py-2 py-md-3 text-decoration-none text-center nav-link transition-1000"
+              >韶关市民营企业服务中心</RouterLink
             >
           </div>
         </div>

@@ -4,9 +4,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routeBasics = [
   { name: 'intro', title: '工商联简介' },
   { name: 'constitution', title: '工商联章程' },
-  { name: 'leadership', title: '工商联领导' },
-  { name: 'departments', title: '部门机构' },
-  { name: 'members', title: '会员列表' },
+  { name: 'leadership', title: '领导' },
+  { name: 'office', title: '办公室' },
+  { name: 'member', title: '会员部' },
+  { name: 'economic', title: '经济联络部' },
+  { name: 'service', title: '韶关市民营企业服务中心' },
 ]
 
 // 生成完整路由配置

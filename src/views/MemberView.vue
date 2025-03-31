@@ -1,18 +1,18 @@
 <script setup lang="ts">
-// 部门机构页面
+// 会员部页面
 </script>
 
 <template>
   <div class="container py-4">
-    <h1 class="border-bottom border-danger border-5 pb-2 mb-4">部门机构</h1>
-    <div class="p-4" style="min-height: 400px">
+    <h1 class="text-dark border-bottom border-danger pb-2 mb-4">会员部</h1>
+    <div class="bg-white p-4" style="min-height: 400px">
       <!-- 这里将来放置具体内容 -->
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.departments-container {
+.member-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;

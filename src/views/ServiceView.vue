@@ -1,10 +1,10 @@
 <script setup lang="ts">
-// 会员列表页面
+// 韶关市民营企业服务中心页面
 </script>
 
 <template>
   <div class="container py-4">
-    <h1 class="text-dark border-bottom border-danger pb-2 mb-4">会员列表</h1>
+    <h1 class="text-dark border-bottom border-danger pb-2 mb-4">韶关市民营企业服务中心</h1>
     <div class="bg-white p-4" style="min-height: 400px">
       <!-- 这里将来放置具体内容 -->
     </div>
@@ -12,7 +12,7 @@
 </template>
 
 <style scoped lang="scss">
-.members-container {
+.service-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
